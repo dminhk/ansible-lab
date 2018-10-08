@@ -1,8 +1,8 @@
 # ansible-lab
 
-## Host Set-up
+## Ansible Control Machine Prep
 
-* Vagrant
+* Vagrant & VirtualBox
 
 ```
 cd ansible
@@ -24,4 +24,15 @@ end
 ```
 ```
 vagrant up
+vagrant ssh
+```
+
+## Installing Ansible
+
+```
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo apt-add-repository --yes ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
 ```
